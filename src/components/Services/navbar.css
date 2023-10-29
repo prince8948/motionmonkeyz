@@ -1,0 +1,123 @@
+/* navbar css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.active{
+  background: #444e6b;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  padding: 0rem 5rem;
+  z-index: 1000;
+}
+
+nav .logo{
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 1rem;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500; 
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+/* nav ul li a:hover{
+  background: #172554;
+} */
+nav ul li a:not(.active):hover{
+  background: #172554;
+}
+
+nav .menu{
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+nav .menu span{
+  height: 0.5rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width:600px){
+  nav{
+    padding: 0rem;
+    flex-direction: column;
+    align-items:start;
+  }
+  nav .menu{
+    display: flex;
+  }
+  nav ul{
+    padding: 0rem 1rem;
+    width: 100%;
+    display: none;
+  }
+  nav ul.open{
+    display: flex;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a{
+    margin: 0.25rem 0;
+  }
+}
+@media (max-width:480px){
+  nav .menu{
+    display: flex;
+  }
+  nav{
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul{
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  nav ul.open{
+    display: flex;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a{
+    margin: 0.25rem 0;
+  }
+}
+
+
+
+

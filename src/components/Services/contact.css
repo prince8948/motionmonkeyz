@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+:root {
+  --yellow: #fed500;
+  --gray: #adbdd4;
+  --heading: 3rem;
+  --sub-heading: 2rem;
+  --high-color: rgb(255, 1, 1);
+}
+.Contact-page{
+    width: 100%;
+    text-align: center;
+    text-align: center;
+}
+.Contact-page h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--high-color);
+    margin-top: 2rem;
+}
+.Contact-page p{
+    width: 600px;
+    margin: 0px auto;
+    font-size: 1.2rem;
+}
+
+.contact-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.contact-container .contact-content{
+    width: 30%;
+    background: var(--yellow);
+    padding: 2rem;
+   padding: 8rem 3rem;
+   text-align: left;
+}
+.contact-content h2{
+    font-size: var(--heading);
+    font-weight: 700;
+    color: var(--high-color);
+    margin-bottom: 1rem;
+}
+
+.contact-page-form{
+    width: 100%;
+    background: var(--gray);
+    flex-wrap: wrap;
+}
+
+.contact-page-form form{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact-page-form form p{
+    text-align: left;
+    color: #3f4042;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.contact-page-form form .fields{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.contact-page-form form button{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: rgb(50, 157, 199);
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+
