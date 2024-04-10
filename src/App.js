@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="/service" element={<Services/>} /> {/* 👈 Renders at /app/ */}
+        <Route path="/" element={<Services/>} /> {/* 👈 Renders at /app/ */}
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/feature" element={<Feature/>} />

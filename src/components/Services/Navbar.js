@@ -7,17 +7,17 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <Link to='/service' className='logo'> MotionMonkeyz </Link>
+                <Link to='/' className='logo'> MotionMonkeyz </Link>
                 <div onClick={()=> {setMenuOpen(!menuOpen)}} className='menu'>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <ul className={menuOpen ? "open":""}>
-                    <li><NavLink to='/service'>Home</NavLink></li>
+                    <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/about'>About</NavLink></li>
                     <li><NavLink to='/contact'>Contact</NavLink></li>
-                    <li><NavLink to='/feature'>Service</NavLink></li>
+                    {/* <li><NavLink to='/feature'>Service</NavLink></li> */}
                 </ul>
 
             </nav>
